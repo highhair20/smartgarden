@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 
 app.get('/config', function(request, response) {
   var config = {
-    location = {
+    location: {
       source: "http://ip-api.com/json"
     }
   };
