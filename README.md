@@ -1,7 +1,16 @@
 
 On client startup.
 
-* Client does a GET to /init in order to obtain the configuration block. 
+* Client does a GET to /init in order to obtain the configuration block.
+```
+{
+  config: {
+    location: {
+      source: http://ip-api.com/json
+    }
+  }
+}
+```
 
 
 Client makes a POST to the server every x minutes set it's location data.
